@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Bakery Mexico</title>
+  </head>
+  <body vocab="http://schema.org/" typeof="Bakery" resource="http://bakerymexico.example.com/">
+    <h1 property="name">Bakery Mexico</h1>
+    <p property="review" typeof="Review">
+      <span property="reviewBody">
+        <span property="reviewRating" typeof="Rating">
+          <span property="ratingValue">4.5</span> 
+        </span> stars (based on 108 reviews)   
+      </span>    
+    </p>
+    <p>Categories: 
+      <a href="/cat/bakeries">Bakeries</a>, 
+      <a href="/cat/mexican">
+        <span about="http://bakerymexico.example.com/" property="servesCuisine">Mexican</span>    
+      </a>    
+    </p>
+    <p property="location" typeof="PostalAddress">
+      <span property="streetAddress">2811 Story Rd</span><br>
+      <span property="addressLocality">San Jose</span>, 
+      <span property="addressRegion">CA</span> 
+      <span property="postalCode">95127</span>    
+    </p>
+    <p property="telephone">(408) 272-3838</p>
+    <dl>
+      <dt>Price Range</dt> <dd property="priceRange">$</dd>
+      <dt>Good for Kids</dt> <dd>Yes</dd>
+      <dt>Take-out</dt> <dd>Yes</dd>
+      <dt>Outdoor Seating</dt> <dd>No</dd>
+      <dt>Attire</dt> <dd>Casual</dd>
+      <dt>Parking</dt> <dd>Private Lot</dd>
+    </dl>
+  </body>
+</html>

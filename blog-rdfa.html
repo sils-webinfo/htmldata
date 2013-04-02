@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>The Super Friends Blog</title>
+ </head>
+ <body vocab="http://schema.org/" typeof="Blog">
+
+  <h1 property="name">The Super Friends Blog</h1>
+
+  <article property="blogPost" typeof="BlogPosting">
+    <h2 property="name">Trip to the bakery</h2>
+    <p property="articleBody">Today I went on a trip to the bakery. Here is a photo I took:</p>
+    <div typeof="Photograph">
+      <a property="url"
+        href="http://www.flickr.com/photos/roboppy/203626799/" 
+        title="bakery! by roboppy, on Flickr">
+        <img src="http://farm1.staticflickr.com/62/203626799_0a024bc6e3_n.jpg" 
+          width="320" height="213" alt="bakery!">
+      </a>
+      <meta property="name" content="bakery!">
+      <link property="creator" href="#roboppy">
+      <link property="http://creativecommons.org/ns#license" 
+        href="http://creativecommons.org/licenses/by-nc-nd/2.0/">
+    </div>
+  </article>
+
+  <article property="blogPost" typeof="BlogPosting">
+    <h2 property="name">Come with me to see Smashing Pumpkins!</h2>
+    <div property="articleBody">
+      <div typeof="MusicEvent">
+        <meta property="name" content="The Smashing Pumpkins Live in Hong Kong 2013">
+        <p>On <time property="startDate" datetime="2013-08-13T20:00+0800">August 13th at 8pm</time> 
+          I'm going to see 
+          <span property="performer" typeof="MusicGroup">
+            <span property="name">Smashing Pumpkins</span>
+          </span> at the 
+          <span property="location" typeof="Place">
+            <span property="name">AsiaWorld Expo</span>
+            <span property="containedIn" typeof="Place">
+              <meta property="name" content="Hong Kong">
+            </span>
+          </span>!</p>
+        <p property="offers" typeof="Offer">
+          <a property="url" href="http://www.hkticketing.com/Ticketek/eng/event/nswcms_event.asp?id=6572">
+           Buy a ticket</a> and come join me!</p>
+      </div>
+    </div>
+    
+  </article>
+
+  <article property="blogPost" typeof="BlogPosting">
+    <h2 property="name">Trip to 7-11</h2>
+    <div property="articleBody">
+      <p>Today I went to 7-11! I took a bunch of photos,
+      including these two:</p>
+      <div typeof="Photograph">
+        <a property="url"
+          href="http://www.flickr.com/photos/roboppy/8558173227/" 
+          title="7-Eleven by roboppy, on Flickr">
+          <img src="http://farm9.staticflickr.com/8086/8558173227_cf02c584c0_n.jpg" 
+            width="320" height="213" alt="7-Eleven">
+        </a>
+        <meta property="name" content="7-Eleven">
+        <link property="creator" href="#roboppy">
+        <link property="http://creativecommons.org/ns#license" 
+          href="http://creativecommons.org/licenses/by-nc-nd/2.0/">
+      </div>
+    
+      <div typeof="Photograph">
+        <a property="url"
+          href="http://www.flickr.com/photos/roboppy/8559280232/" 
+          title="7-Eleven by roboppy, on Flickr">
+          <img src="http://farm9.staticflickr.com/8228/8559280232_d240f51e9e_n.jpg" 
+            width="320" height="213" alt="7-Eleven">
+        </a>
+        <meta property="name" content="7-Eleven">
+        <link property="creator" href="#roboppy">
+        <link property="http://creativecommons.org/ns#license" 
+          href="http://creativecommons.org/licenses/by-nc-nd/2.0/">
+      </div>
+    
+      <p>My favorite 7-11 photo though is this one my friend took:</p>
+      <div typeof="Photograph">
+        <a property="url"
+          href="http://www.flickr.com/photos/traveller/374456328/" 
+          title="Lunch Break???  7-eleven shop on wheels by hk_traveller, on Flickr">
+          <img src="http://farm1.staticflickr.com/182/374456328_42487a84f3_m.jpg" 
+            width="180" height="240" alt="Lunch Break???  7-eleven shop on wheels">
+        </a>
+        <span property="creator" typeof="Person">
+          <meta property="name" content="hk_traveller">
+        </span>
+        <meta property="name" content="Lunch Break???  7-eleven shop on wheels">
+      </div>
+    </div>
+  </article>
+
+  
+  <div property="creator" resource="#roboppy" typeof="Person">
+    <meta property="name" content="Robyn Lee">
+  </div>
+
+ </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Chair reviews</title>
+  </head>
+  <body vocab="http://schema.org/">
+    <h1>Reviews of chairs</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name
+          <th>Price
+          <th>Rating
+          <th>Weight
+      <tbody>
+        <tr typeof="Product" resource="#eon-chair">
+          <td property="name">Eon Chair
+          <td property="offers" typeof="Offer">
+            $<span property="price">299</span><meta property="priceCurrency" content="USD">
+          <td property="review" typeof="Review">
+            <span property="reviewBody">
+              <span property="reviewRating" typeof="Rating">
+                <span property="ratingValue">4.5</span>    
+              </span> stars    
+            </span>
+          <td property="weight" typeof="QuantitativeValue">
+            <span property="value">25</span>kg<meta property="unitCode" content="KGM">
+        <tr typeof="Product" resource="#astra-chair">
+          <td property="name">Astrachair
+          <td property="offers" typeof="Offer">
+            $<span property="price">49</span><meta property="priceCurrency" content="USD">
+          <td property="review" typeof="Review">
+            <span property="reviewBody">
+              <span property="reviewRating" typeof="Rating">
+                <span property="ratingValue">2</span>    
+              </span> stars    
+            </span>
+          <td property="weight" typeof="QuantitativeValue">
+            <span property="value">5</span>kg<meta property="unitCode" content="KGM">
+    </table>
+
+    <h2>Details</h2>
+
+    <h3>The Eon Chair</h3>
+    <div about="#eon-chair">
+      <img property="image" alt="Eon Chair" src="http://static1.bonluxat.com/cmsense/data/uploads/orig/Philippe_Starck_Cam_El_Eon_Easy_Chair_1r5.jpg">
+    </div>
+
+    <h3>Astrachair</h3>
+    <div about="#astra-chair">
+      <img property="image" alt="Astrachair" src="http://img.archiexpo.com/images_ae/photo-g/traditional-armchair-with-footstool-9705-1719715.jpg">
+      <div property="manufacturer" typeof="Corporation">
+        <p>Contact information:</p>
+        <p>
+          <span property="name">Astra Company</span><br>
+          <span property="contactPoint" typeof="PostalAddress" itemref="astra-phone">
+            <span property="streetAddress">2811 Mountain Road</span><br>
+            <span property="addressLocality">San Jose</span>, 
+            <span property="addressRegion">CA</span> 
+            <span property="postalCode">95127</span>
+          </span>
+        </p>
+        <p id="astra-phone" property="telephone">(408) 555-3838</p>
+      </div>
+    </div>
+
+ </body>
+</html>
