@@ -6,12 +6,12 @@ to mark up these example HTML pages. Do two of them using RDFa syntax,
 and two of them using microdata syntax.
 
 RDFa useful links:
-    * [RDFA attributes](http://www.w3.org/TR/rdfa-lite/#the-attributes)
-    * [Examples at Wikipedia](http://en.wikipedia.org/wiki/RDFa#Examples_of_RDFa)
+* [RDFA attributes](http://www.w3.org/TR/rdfa-lite/#the-attributes)
+* [Examples at Wikipedia](http://en.wikipedia.org/wiki/RDFa#Examples_of_RDFa)
 
 Microdata useful links:
-    * [Microdata spec](http://www.whatwg.org/specs/web-apps/current-work/multipage/microdata.html)
-    * [Example at Wikipedia](http://en.wikipedia.org/wiki/Microdata_(HTML)#Example)
+* [Microdata spec](http://www.whatwg.org/specs/web-apps/current-work/multipage/microdata.html)
+* [Example at Wikipedia](http://en.wikipedia.org/wiki/Microdata_(HTML)#Example)
 
 Also see these [examples of various things marked up using RDFa and
 microdata](https://github.com/mhausenblas/schema-org-rdf/tree/master/examples/Thing)
