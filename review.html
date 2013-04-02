@@ -1,50 +1,70 @@
 <!DOCTYPE HTML>
 <html>
- <head>
-  <title>Chair reviews</title>
- </head>
- <body>
-  <h1>Reviews of chairs</h1>
+  <head>
+    <meta charset="UTF-8">
+    <title>Chair reviews</title>
+  </head>
+  <body>
+    <h1>Reviews of chairs</h1>
 
-  <table>
-   <thead>
-    <tr>
-     <th>Name
-     <th>Price
-     <th>Rating
-     <th>Weight
-   <tbody>
-    <tr>
-     <td>Eon Chair
-     <td>$299
-     <td>4.5 stars
-     <td>25kg
-    <tr>
-     <td>Astrachair
-     <td>$49
-     <td>2 stars
-     <td>5kg
-  </table>
+    <table>
+      <thead>
+        <tr>
+          <th>Name
+          <th>Price
+          <th>Rating
+          <th>Weight
+      <tbody>
+        <tr itemscope itemtype="http://schema.org/Product" itemref="chair1">
+          <td itemprop="name">Eon Chair
+          <td itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+            $<span itemprop="price">299</span><meta itemprop="priceCurrency" content="USD">
+          <td itemprop="review" itemscope itemtype="http://schema.org/Review">
+            <span itemprop="reviewBody">
+              <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                <span itemprop="ratingValue">4.5</span>    
+              </span> stars    
+            </span>
+          <td itemprop="weight" itemscope itemtype="http://schema.org/QuantitativeValue">
+            <span itemprop="value">25</span>kg<meta itemprop="unitCode" content="KGM">
+        <tr itemscope itemtype="http://schema.org/Product" itemref="chair2">
+          <td itemprop="name">Astrachair
+          <td itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+            $<span itemprop="price">49</span><meta itemprop="priceCurrency" content="USD">
+          <td itemprop="review" itemscope itemtype="http://schema.org/Review">
+            <span itemprop="reviewBody">
+              <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                <span itemprop="ratingValue">2</span>    
+              </span> stars    
+            </span>
+          <td itemprop="weight" itemscope itemtype="http://schema.org/QuantitativeValue">
+            <span itemprop="value">5</span>kg<meta itemprop="unitCode" content="KGM">
+    </table>
 
-  <h2>Details</h2>
+    <h2>Details</h2>
 
-  <h3>The Eon Chair</h3>
-  <div id="chair1">
-   <img src="http://static1.bonluxat.com/cmsense/data/uploads/orig/Philippe_Starck_Cam_El_Eon_Easy_Chair_1r5.jpg">
-  </div>
+    <h3>The Eon Chair</h3>
+    <div id="chair1">
+      <img itemprop="image" alt="Eon Chair" src="http://static1.bonluxat.com/cmsense/data/uploads/orig/Philippe_Starck_Cam_El_Eon_Easy_Chair_1r5.jpg">
+    </div>
 
-  <h3>Astrachair</h3>
-  <div id="chair2">
-   <img src="http://img.archiexpo.com/images_ae/photo-g/traditional-armchair-with-footstool-9705-1719715.jpg">
-   <div>
-    <p>Contact information:</p>
-    <p>Astra Company<br>
-       2811 Mountain Road<br>
-       San Jose, CA 95127
-    </p>
-    <p>(408) 555-3838</p>
-   </div>
-  </div>
+    <h3>Astrachair</h3>
+    <div id="chair2">
+      <img itemprop="image" alt="Astrachair" src="http://img.archiexpo.com/images_ae/photo-g/traditional-armchair-with-footstool-9705-1719715.jpg">
+      <div itemprop="manufacturer" itemscope itemtype="http://schema.org/Corporation">
+        <p>Contact information:</p>
+        <p>
+          <span itemprop="name">Astra Company</span><br>
+          <span itemprop="contactPoint" itemscope itemtype="http://schema.org/PostalAddress" itemref="astra-phone">
+            <span itemprop="streetAddress">2811 Mountain Road</span><br>
+            <span itemprop="addressLocality">San Jose</span>, 
+            <span itemprop="addressRegion">CA</span> 
+            <span itemprop="postalCode">95127</span>
+          </span>
+        </p>
+        <p id="astra-phone" itemprop="telephone">(408) 555-3838</p>
+      </div>
+    </div>
 
  </body>
 </html>

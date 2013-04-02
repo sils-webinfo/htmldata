@@ -1,24 +1,39 @@
 <!DOCTYPE HTML>
 <html>
- <head>
-  <title>Bakery Photograph</title>
- </head>
- <body>
-  <h1>Bakery Photograph</h1>
-  <a href="http://www.flickr.com/photos/gabofr/3887968541/" 
-     title="para el desayuno by gabofr, on Flickr">
-    <img src="http://farm4.staticflickr.com/3459/3887968541_8739641f1c_m.jpg" 
-         width="240" height="180" alt="para el desayuno">
-  </a>
-  <p>My friend Carey and I took a trip across the border today to
-  Tecate, Mexico. Reason for the trip? Breakfast and bread - both
-  delicious! Mexico is so colorful - and I was grateful I'd brought my
-  nice DSLR. Only brought my f1/8, 50mm, hence the severe DOF on the
-  bakery shots!</p>
-  <p>Taken with a Kodak V705 DUAL LENS.</p>
-  <p>Taken on July 21, 2009 at 9am UTC.</p>
-  <p>Tags: mexico panaderia bakery</p>
-  <p>&copy; copyright 2009 Gabriel Romero</p>
-  <p>Licensed under the <a href="http://creativecommons.org/licenses/by/2.0/">CC-BY 2.0</a> license.</p>
- </body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Bakery Photograph</title>
+  </head>
+  <body>
+    <div itemscope itemtype="http://schema.org/Photograph" itemref="photo-metadata">
+      <h1 itemprop="name">Bakery Photograph</h1>
+      <a itemprop="url" href="http://www.flickr.com/photos/gabofr/3887968541/" 
+         title="para el desayuno by gabofr, on Flickr">
+        <div itemprop="encoding" itemscope itemtype="http://schema.org/ImageObject" 
+          itemref="image-metadata photo-metadata">
+          <img itemprop="contentUrl" src="http://farm4.staticflickr.com/3459/3887968541_8739641f1c_m.jpg" 
+            width="240" height="180" alt="para el desayuno">
+        </div>
+      </a>
+      <p itemprop="description">My friend Carey and I took a trip across the border today to
+        Tecate, Mexico. Reason for the trip? Breakfast and bread - both
+        delicious! Mexico is so colorful - and I was grateful I'd brought my
+        nice DSLR. Only brought my f1/8, 50mm, hence the severe DOF on the
+        bakery shots!</p>
+    </div>
+    <p id="image-metadata">Taken with a <span itemprop="exifData">Kodak V705 DUAL LENS</span>.</p>
+    <div id="photo-metadata">
+      <p>Taken on <time itemprop="dateCreated" datetime="2009-07-21T09:00Z">July 21, 2009 at 9am UTC</time>.</p>
+      <p>Tags: 
+        <span itemprop="keywords">mexico</span>
+        <span itemprop="keywords">panaderia</span> 
+        <span itemprop="keywords">bakery</span>    
+      </p>
+      <p>&copy; copyright <span itemprop="copyrightYear">2009</span> 
+        <span itemprop="copyrightHolder" itemscope itemtype="http://schema.org/Person">
+          <span itemprop="name">Gabriel Romero</span></span></p>
+      <p>Licensed under the <a itemprop="license" href="http://creativecommons.org/licenses/by/2.0/">
+        CC-BY 2.0</a> license.</p>
+    </div>
+  </body>
 </html>

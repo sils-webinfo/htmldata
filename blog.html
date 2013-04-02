@@ -1,61 +1,94 @@
 <!DOCTYPE HTML>
 <html>
  <head>
+  <meta charset="UTF-8">
   <title>The Super Friends Blog</title>
  </head>
- <body>
+ <body itemscope itemtype="http://schema.org/Blog">
 
-  <h1>The Super Friends Blog</h1>
+  <h1 itemprop="name">The Super Friends Blog</h1>
 
-  <h2>Trip to the bakery</h2>
-  <p>Today I went on a trip to the bakery. Here is a photo I took:</p>
-  <a href="http://www.flickr.com/photos/roboppy/203626799/" 
-     title="bakery! by roboppy, on Flickr">
-    <img src="http://farm1.staticflickr.com/62/203626799_0a024bc6e3_n.jpg" 
-         width="320" height="213" alt="bakery!">
-  </a>
-  <!-- artist: Robyn Lee
-       license: http://creativecommons.org/licenses/by-nc-nd/2.0/
-       title: bakery! -->
+  <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+    <h2 itemprop="name">Trip to the bakery</h2>
+    <p itemprop="articleBody">Today I went on a trip to the bakery. Here is a photo I took:</p>
+    <div itemscope itemtype="http://schema.org/Photograph" itemref="license">
+      <a itemprop="url"
+        href="http://www.flickr.com/photos/roboppy/203626799/" 
+        title="bakery! by roboppy, on Flickr">
+        <img src="http://farm1.staticflickr.com/62/203626799_0a024bc6e3_n.jpg" 
+          width="320" height="213" alt="bakery!">
+      </a>
+      <meta itemprop="name" content="bakery!">
+    </div>
+  </article>
 
-  <h2>Come with me to see Melissa Etheridge!</h2>
-  <p>On August 13th at 8pm I'm going to see Smashing Pumpkins at the
-  AsiaWorld Expo!</p>
-  <p><a href="http://www.hkticketing.com/Ticketek/eng/event/nswcms_event.asp?id=6572">
-     Buy a ticket</a> and come join me!</p>
-  <!-- summary: The Smashing Pumpkins Live in Hong Kong 2013
-       start: August 13th 2013 at 8pm
-       location: AsiaWorld Expo in Hong Kong
-       (HK is in HKT time zone, which is UTC+0800) -->
+  <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+    <h2 itemprop="name">Come with me to see Smashing Pumpkins!</h2>
+    <div itemprop="articleBody">
+      <div itemscope itemtype="http://schema.org/MusicEvent">
+        <meta itemprop="name" content="The Smashing Pumpkins Live in Hong Kong 2013">
+        <p>On <time itemprop="startDate" datetime="2013-08-13T20:00+0800">August 13th at 8pm</time> 
+          I'm going to see 
+          <span itemprop="performer" itemscope itemtype="http://schema.org/MusicGroup">
+            <span itemprop="name">Smashing Pumpkins</span>
+          </span> at the 
+          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+            <span itemprop="name">AsiaWorld Expo</span>
+            <span itemprop="containedIn" itemscope itemtype="http://schema.org/Place">
+              <meta itemprop="name" content="Hong Kong">
+            </span>
+          </span>!</p>
+        <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+          <a itemprop="url" href="http://www.hkticketing.com/Ticketek/eng/event/nswcms_event.asp?id=6572">
+           Buy a ticket</a> and come join me!</p>
+      </div>
+    </div>
+    
+  </article>
 
-  <h2>Trip to 7-11</h2>
-  <p>Today I went to 7-11! I took a bunch of photos,
-  including these two:</p>
-  <a href="http://www.flickr.com/photos/roboppy/8558173227/" 
-     title="7-Eleven by roboppy, on Flickr">
-    <img src="http://farm9.staticflickr.com/8086/8558173227_cf02c584c0_n.jpg" 
-         width="320" height="213" alt="7-Eleven">
-  </a>
-  <!-- artist: Robyn Lee
-       license: http://creativecommons.org/licenses/by-nc-nd/2.0/
-       title: 7-Eleven -->
-  <a href="http://www.flickr.com/photos/roboppy/8559280232/" 
-     title="7-Eleven by roboppy, on Flickr">
-    <img src="http://farm9.staticflickr.com/8228/8559280232_d240f51e9e_n.jpg" 
-         width="320" height="213" alt="7-Eleven">
-  </a>
-  <!-- artist: Robyn Lee
-       license: http://creativecommons.org/licenses/by-nc-nd/2.0/
-       title: 7-Eleven -->
+  <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+    <h2 itemprop="name">Trip to 7-11</h2>
+    <div itemprop="articleBody">
+      <p>Today I went to 7-11! I took a bunch of photos,
+      including these two:</p>
+      <div itemscope itemtype="http://schema.org/Photograph" itemref="license">
+        <a itemprop="url"
+          href="http://www.flickr.com/photos/roboppy/8558173227/" 
+          title="7-Eleven by roboppy, on Flickr">
+          <img src="http://farm9.staticflickr.com/8086/8558173227_cf02c584c0_n.jpg" 
+            width="320" height="213" alt="7-Eleven">
+        </a>
+        <meta itemprop="name" content="7-Eleven">
+      </div>
+    
+      <div itemscope itemtype="http://schema.org/Photograph" itemref="license">
+        <a itemprop="url"
+          href="http://www.flickr.com/photos/roboppy/8559280232/" 
+          title="7-Eleven by roboppy, on Flickr">
+          <img src="http://farm9.staticflickr.com/8228/8559280232_d240f51e9e_n.jpg" 
+            width="320" height="213" alt="7-Eleven">
+        </a>
+        <meta itemprop="name" content="7-Eleven">
+      </div>
+    
+      <p>My favorite 7-11 photo though is this one my friend took:</p>
+      <div itemscope itemtype="http://schema.org/Photograph">
+        <a itemprop="url"
+          href="http://www.flickr.com/photos/traveller/374456328/" 
+          title="Lunch Break???  7-eleven shop on wheels by hk_traveller, on Flickr">
+          <img src="http://farm1.staticflickr.com/182/374456328_42487a84f3_m.jpg" 
+            width="180" height="240" alt="Lunch Break???  7-eleven shop on wheels">
+        </a>
+        <meta itemprop="creator" content="hk_traveller">
+        <meta itemprop="name" content="Lunch Break???  7-eleven shop on wheels">
+      </div>
+    </div>
+  </article>
 
-  <p>My favorite 7-11 photo though is this one my friend took:</p>
-  <a href="http://www.flickr.com/photos/traveller/374456328/" 
-     title="Lunch Break???  7-eleven shop on wheels by hk_traveller, on Flickr">
-    <img src="http://farm1.staticflickr.com/182/374456328_42487a84f3_m.jpg" 
-         width="180" height="240" alt="Lunch Break???  7-eleven shop on wheels">
-  </a>
-  <!-- artist: kh_traveller
-       (no license) -->
+  <div id="license">
+    <meta itemprop="creator" content="Robyn Lee">
+    <link itemprop="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/">
+  </div>
 
  </body>
 </html>
